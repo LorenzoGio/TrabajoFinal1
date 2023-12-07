@@ -88,9 +88,7 @@ body .informacion {
   font-size: 40px;
   margin: 20px;
   padding-left: 20px;
-  width: 500px;
   border-radius: 50px;
-  background-color: #a8925b;
   opacity: 0.9;
 }
 
@@ -215,19 +213,46 @@ body .informacion {
     flex-direction: column;
     width: 100%;
   }
+  
+  .li1 {
+    display: none;
+  }
+
+  .li2 {
+    display: none;
+  }
+
   .segunda {
     display: none;
   }
+  .subtitulo {
+    max-width: 350px;
+    background-color: none;
+  }
+  .parrafo {
+    max-width: 350px;
+    margin: 10px;
+  }
 }
+
 @media (max-width: 1220px) {
+  
+  .primera {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  }
+
   .primera2 {
     display: none;
   }
   .primera1 {
-    grid-area: 2/4/3/10;
+    grid-area: 1 / 1 / 2 / 2;
   }
   .primera3 {
-    grid-area: 5/2/8/11;
+    grid-area: 3 / 1 / 4 / 2;
     text-align: center;
   }
   .segunda1 {
@@ -336,7 +361,6 @@ form input[type=submit]:hover {
 
 .informacion {
   display: flex;
-  background: rgb(128, 120, 10);
 }
 .informacion .info1 {
   flex-direction: row;
